@@ -12,10 +12,10 @@
                   </thead>
                   <tbody>
                   <?php 
-                  $i = 0;
                   foreach ($this->list as $index=>$huncai) {
+                    $index = $index + 1;
                     echo "<tr>
-                      <td>$index</td>
+                      <td>{$index}</td>
                       <td>{$huncai['name']}</td>
                     </tr>";
                   }

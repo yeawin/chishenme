@@ -16,6 +16,25 @@ class HuncaiController extends Zend_Controller_Action
         $this->view->list = $huncai;
     }
 
+    public function addAction()
+    {
+        // action body
+    }
+
+    public function addOkAction()
+    {
+        // action body
+        $Params = $this->getAllParams();
+        $data["name"] = $Params["name"];
+        $Huncai = new Application_Model_Huncai();
+        $Huncai->insert_record($data);
+        $this->redirect("/huncai");
+    }
+
 
 }
+
+
+
+
 

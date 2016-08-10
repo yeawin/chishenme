@@ -13,6 +13,13 @@ class ShuiguoController extends Zend_Controller_Action
         // action body
     }
 
+    public function addAction()
+    {
+        // action body
+    }
+
 
 }
+
+
 
